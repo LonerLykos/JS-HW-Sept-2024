@@ -48,7 +48,7 @@ console.log(' ')
         authors: [{
             name: 'Isaac Asimov',
             age: null,
-        }]
+        }],
     };
     let book2 = {
         title: 'Children of Dune',
@@ -57,8 +57,7 @@ console.log(' ')
         authors: [{
             name: 'Frank Herbert',
             age: null,
-        }]
-
+        }],
     };
     let book3 = {
         title: 'Blindsight',
@@ -67,8 +66,7 @@ console.log(' ')
         authors: [{
             name: 'Peter Watts',
             age: 66,
-        }]
-
+        }],
     };
 }
 

@@ -17,7 +17,7 @@ console.log(' ');
 {
     let sting1 = 'hello world';
     let sting2 = 'lorem ipsum';
-    let sting3 = 'javasqirt is cool';
+    let sting3 = 'javascript is cool';
     console.log(sting1.toUpperCase());
     console.log(sting2.toUpperCase());
     console.log(sting3.toUpperCase());
@@ -31,7 +31,7 @@ console.log(' ');
 {
     let sting1 = 'HELLO WORLD';
     let sting2 = 'LOREM IPSUM';
-    let sting3 = 'JAVASQUIRT IS COOL';
+    let sting3 = 'JAVASCRIPT IS COOL';
     console.log(sting1.toLowerCase());
     console.log(sting2.toLowerCase());
     console.log(sting3.toLowerCase());

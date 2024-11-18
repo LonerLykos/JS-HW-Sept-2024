@@ -46,16 +46,20 @@ console.log(' ')
 {
     class Client{
 
-        constructor(id, name, surname, email, phone, ...order) {
+        constructor(id, name, surname, email, phone, ...products) {
             this.id = id;
             this.name = name;
             this.surname = surname;
             this.email = email;
             this.phone = phone;
-            this.order = order;
+            this.order = products;
         }
     }
 
+    function Product (title, price) {
+        this.title = title;
+        this.price = price;
+    }
     let clients = [
         new Client(1, 'Tom', 'Tom', 'tom@gmail.com', '+12345', 'eggs', 'milk'),
         new Client(2, 'Max', 'Max', 'max@gmail.com', '+12345', 'pepper'),

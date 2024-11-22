@@ -29,9 +29,3 @@ button.onclick = () => {
 }
 
 document.body.append(input, button);
-
-
-// button.onclick = () =>  {
-//     const age = +input.value;
-//     p.textContent = (age && age > 0) ? (age < 18 ? 'Too young!' : 'You’re definitely 18!') : 'Please enter a valid number!';
-// };

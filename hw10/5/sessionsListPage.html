@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let storageData = JSON.parse(localStorage.getItem('data'));
+    const dataUlList = document.createElement('ul');
+    dataUlList.textContent = 'Відвідування сторінки index.html';
+    storageData.forEach((item, index) => {
+        const vidvid = document.createElement('li');
+        vidvid.style.color = 'darkblue';
+        vidvid.textContent = `Відвідування ${index + 1}: ${item}`;
+        dataUlList.appendChild(vidvid);
+    });
+    document.body.appendChild(dataUlList);
+</script>
+</body>
+</html>

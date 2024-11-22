@@ -9,11 +9,11 @@
             let funcs = [];
             for (const key in obj) {
                 if (typeof obj[key] === 'function') {
-                    let item = obj[key].bind({obj});
+                    let item = obj[key].bind({});
                     funcs.push({item, key});
                 }
             }
-
+            console.log(funcs);
             const parseObj = JSON.parse(JSON.stringify(obj));
             for (const func of funcs) {
                 parseObj[func.key] = func.item;

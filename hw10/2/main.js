@@ -9,14 +9,14 @@ input.required = true;
 const button = document.createElement('button');
 button.textContent = 'submit';
 button.type = 'submit';
-button.onclick = function () {
+button.onclick = () => {
     const age = +input.value;
     if (typeof age === 'number') {
         if (input.value >= 18) {
             const p = document.createElement('p');
             p.textContent = 'а ви дорослий)';
             document.body.appendChild(p);
-        }else if (age <= 18) {
+        }else if (age < 18) {
             const p = document.createElement('p');
             p.textContent = 'ще треба підрости)';
             document.body.appendChild(p);
@@ -29,3 +29,9 @@ button.onclick = function () {
 }
 
 document.body.append(input, button);
+
+
+// button.onclick = () =>  {
+//     const age = +input.value;
+//     p.textContent = (age && age > 0) ? (age < 18 ? 'Too young!' : 'You’re definitely 18!') : 'Please enter a valid number!';
+// };

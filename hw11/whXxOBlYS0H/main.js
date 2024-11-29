@@ -6,7 +6,6 @@ fetch('https://dummyjson.com/recipes?limit=0')
     .then(resp => {
         let {recipes} = resp;
 
-        console.log(recipes[0]);
         const divCarts = document.createElement('div');
         divCarts.classList.add('carts');
         document.body.appendChild(divCarts);
